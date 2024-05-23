@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0,36,35);
+    background: radial-gradient(circle, rgba(0,36,35,0.6727065826330532) 0%, rgba(76,147,167,0.5970763305322129) 41%, rgba(0,164,255,0.11528361344537819) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 85vh;
+}
+
+.weather-app{
+    background-color: azure;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #7e7a7a;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.search-btn{
+    background-color: rgb(97, 97, 136);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(250, 252, 252);
+    margin-left: 10px;
+    transition: background-color 0.3sec ease;
+}
+
+.search-btn:hover{
+    background-color: rgb(75, 75, 168);
+}
+
+.city-date-section{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-date-section .city{
+    font-size: 2rem;
+    opacity: 0.9;
+
+}
+
+.city-date-section .date{
+    background-color: rgb(240, 242, 243);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temperature-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperature-info .temp{
+    font-size: 8rem;
+}
+
+.temperature-info .description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperature-info .description i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.temperature-info .description span{
+    font-size: 1.5rem;
+}
+
+.additional-info{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.wind-info, .humidity-info, .visibility-info{
+    background-color: rgb(101, 165, 165);
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px ;
+}
+
+.additional-info .material-icons {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div, .humidity-info div , .visibility-info div{
+    text-align: center;
+}
